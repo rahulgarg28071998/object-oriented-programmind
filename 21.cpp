@@ -5,29 +5,19 @@ using namespace std;
 
 class base {
 	public:base(){
+		cout<<"this is base class\n";
 	}
-			virtual void show()
-			{
-			cout<<"this is base class";
-				
-			}
 };
 
-class derived:public base{
-
-	public:derived(){
-	};
-			void show()
+class container{
+	base b;
+	public : container()
 	{
-		cout<<"this is derived class";
+		cout<<"this is container class\n";
 	}
 };
 
 int main()
 {
-	derived d;
-	base b;
-	d.show();
-	d.show();
-	return 0;
+	container c;
 }
